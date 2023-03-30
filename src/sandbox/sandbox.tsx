@@ -21,7 +21,7 @@ const Sandbox = () => {
      */
     useEffect(() => {
         (async () => {
-            const artists = await spotifyUser.spotifyApi.getMyTopArtists()
+            const artists = await spotifyUser?.spotifyApi?.getMyTopArtists()
             //@ts-ignore
             setTopArtists(artists)
         })();
